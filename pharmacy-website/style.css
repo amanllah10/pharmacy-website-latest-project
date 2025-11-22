@@ -154,6 +154,7 @@ input[type=text] {
     padding: 10px;
     width: 500px;
     border-radius: 20px;
+    margin-left: 15px;
 }
 
 
@@ -201,7 +202,7 @@ button:hover{
 @media(max-width:600px){
     .hero-h1{
         width: 95%;
-        padding: 0px 10px;
+        padding-left:10px;
         margin: auto;
         font-size: 35px;
     }
@@ -210,7 +211,7 @@ button:hover{
         margin: auto;
         font-size: 25px;
         padding-top: 10px;
-        padding: 0px 10px;
+        padding-left:10px;
     }
 }
 
