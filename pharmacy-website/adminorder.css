@@ -41,6 +41,7 @@ tr:nth-child(even) {
     table, thead, tbody, th, td, tr {
         display: block;
         width: 100%;
+        padding-right: 25px;
     }
 
     thead {
