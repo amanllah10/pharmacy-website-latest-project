@@ -1,7 +1,7 @@
 // Fetch all orders from backend
 async function fetchOrders() {
     try {
-        const res = await fetch('http://localhost:5000/api/orders');
+        const res = await fetch('https://pharmacy-backend.fly.dev/api/orders');
         const orders = await res.json();
         const tbody = document.querySelector('#ordersTable tbody');
         tbody.innerHTML = '';
@@ -58,7 +58,7 @@ document.addEventListener('change', async (e) => {
         const newStatus = e.target.value;
 
         try {
-            const res = await fetch(`http://localhost:5000/api/orders/${orderId}`, {
+            const res = await fetch(`https://pharmacy-backend.fly.dev/api/orders/${orderId}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ status: newStatus })
@@ -86,7 +86,7 @@ document.addEventListener('click', async (e) => {
         if(!confirm('Are you sure you want to delete this order?')) return;
 
         try {
-            const res = await fetch(`http://localhost:5000/api/orders/${orderId}`, {
+            const res = await fetch(`https://pharmacy-backend.fly.dev/api/orders/${orderId}`, {
                 method: 'DELETE'
             });
 
