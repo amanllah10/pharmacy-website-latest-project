@@ -129,6 +129,7 @@ document.getElementById("checkCartBtn").addEventListener("click", () => {
         phone: phoneInput.value,
         address: addressInput.value
     };
+    localStorage.setItem("user", JSON.stringify(user));
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
     if (cart.length === 0) {
         alert("Add items to cart first!");
