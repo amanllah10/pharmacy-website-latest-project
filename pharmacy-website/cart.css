@@ -1,0 +1,116 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Cart table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle; /* vertical align text */
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#cartTable img {
+    width: 50px; /* desktop image size */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#checkoutBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* ================== Responsive ================== */
+@media screen and (max-width: 768px) {
+
+    /* Hide product images on mobile */
+    #cartTable img {
+        display: none;
+    }
+
+    /* Make table rows block for mobile */
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        border: none;
+        display: flex;
+        justify-content: space-between; /* label left, value right */
+        padding: 8px 0;
+        text-align: left;
+    }
+
+    /* Add labels dynamically for mobile */
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 45%;
+    }
+
+    #checkoutBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
