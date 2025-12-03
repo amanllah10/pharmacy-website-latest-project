@@ -135,6 +135,7 @@ body {
 
 .slider2 img {
     width: 70px;
+    margin: auto;
     height: 70px;
     object-fit: contain;
 }
