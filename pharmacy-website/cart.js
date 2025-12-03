@@ -80,6 +80,11 @@ checkoutBtn.addEventListener("click", () => {
     let email = user.email;
     let phone = user.phone;
     let address = user.address;
+    console.log(user.name)
+    console.log(user.email)
+    console.log(user.phone)
+    console.log(user.address)
+    console.log(user)
 
     // If user info not present, ask via prompt
     if (!name || !email || !phone || !address) {
