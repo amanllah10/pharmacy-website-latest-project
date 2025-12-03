@@ -14,13 +14,13 @@ alt.innerHTML = localStorage.getItem('productalt');
 // Lower images switch
 const altValue = alt.innerHTML;
 const imageSets = {
-    relief: ['../images/DSC00001.JPG', '../images/DSC00007.JPG', '../images/DSC00008.JPG'],
-    vitamin: ['../images/DSC00033.JPG', '../images/DSC00037.JPG', '../images/DSC00042.JPG'],
-    joint: ['../images/DSC00053.JPG', '../images/DSC00055.JPG', '../images/DSC00056.JPG'],
-    carica: ['../images/DSC00058.JPG', '../images/DSC00061.JPG', '../images/DSC00066.JPG'],
-    cough: ['../images/DSC00072.JPG', '../images/DSC00075.JPG', '../images/DSC00075.JPG'],
-    pain: ['../images/DSC00077.JPG', '../images/DSC00086.JPG', '../images/DSC00087.JPG'],
-    default: ['../images/DSC00017.JPG', '../images/DSC00017.JPG', '../images/DSC00017.JPG']
+    relief: ['./pharmacy-website/images/DSC00001.JPG', './pharmacy-website/images/DSC00007.JPG', './pharmacy-website/images/DSC00008.JPG'],
+    vitamin: ['./pharmacy-website/images/DSC00033.JPG', './pharmacy-website/images/DSC00037.JPG', './pharmacy-website/images/DSC00042.JPG'],
+    joint: ['./pharmacy-website/images/DSC00053.JPG', './pharmacy-website/images/DSC00055.JPG', './pharmacy-website/images/DSC00056.JPG'],
+    carica: ['./pharmacy-website/images/DSC00058.JPG', './pharmacy-website/images/DSC00061.JPG', './pharmacy-website/images/DSC00066.JPG'],
+    cough: ['./pharmacy-website/images/DSC00072.JPG', './pharmacy-website/images/DSC00075.JPG', './pharmacy-website/images/DSC00075.JPG'],
+    pain: ['./pharmacy-website/images/DSC00077.JPG', './pharmacy-website/images/DSC00086.JPG', './pharmacy-website/images/DSC00087.JPG'],
+    default: ['./pharmacy-website/images/DSC00017.JPG', './pharmacy-website/images/DSC00017.JPG', './pharmacy-website/images/DSC00017.JPG']
 };
 let selectedImages = imageSets[altValue] || imageSets.default;
 img2.src = selectedImages[0];
