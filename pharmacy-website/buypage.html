@@ -3,24 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style2.css">
+    <title>Buy Page</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="buy-page-cont">
-        <div class="buy-page">
-            <img src="" alt="" class="buy-img">
-            <div>
-                <h3 class="buy-title"></h3>
+<div class="buy-page-cont">
+    <div class="buy-page">
+        <img src="" alt="" class="buy-img">
+        <div>
+            <h3 class="buy-title"></h3>
+
+            <button class="add-to-cart">Add To Cart</button>
+            <button id="checkCartBtn">Check Cart</button>
+
+            <div class="qty-container">
+                <button class="minus">-</button>
+                <span class="qty">1</span>
+                <button class="plus">+</button>
             </div>
-        </div>
-        <p class="alt"></p>
-        <div class="imgs-cont">
-            <img class="img2" src="" alt="">
-            <img class="img3" src="" alt="">
-            <img class="img4" src="" alt="">
+            <div class="price-box"></div>
+            <div class="total-box"></div>
         </div>
     </div>
-    <script src="script2.js"></script>
+
+    <p class="alt"></p>
+
+    <div class="imgs-cont">
+        <img class="img2" src="" alt="">
+        <img class="img3" src="" alt="">
+        <img class="img4" src="" alt="">
+    </div>
+
+    <!-- Order Form -->
+    <form id="orderForm">
+        <h3>Place Your Order</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="address" placeholder="Address" required></textarea>
+    </form>
+
+    <!-- Place Order Button Below Form -->
+    <button id="placeOrderBtn">Place Order</button>
+
+    <div id="toast" class="toast"></div>
+</div>
+
+<script src="script2.js"></script>
 </body>
 </html>
